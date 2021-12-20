@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+    tools:context=".MovieActivity">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        fab:fab_colorNormal="#FF4040"
+        fab:fab_colorPressed="#AA1919"
+        fab:fab_colorRipple="#FF4040"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/movie_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10px"
+        android:layout_marginRight="10px"
+        android:focusable="true"
+        android:backgroundTint="#FF4646"
+        android:ems="10"
+        android:foregroundTint="#FF4B4B"
+        android:hint="Movie name:"
+        android:inputType="textPersonName"
+        android:textColor="#FF4B4B"
+        android:textColorLink="#FF4B4B"
+        android:textCursorDrawable="@android:color/holo_red_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/controller_state_btn"
+        android:drawableLeft="@drawable/fab_add"
+        android:paddingLeft="40px"
+        android:paddingRight="20px"
+        android:text="Add"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_name"
+        app:layout_constraintVertical_bias="0.337" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
